@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dochtml</title>
+    <title>
+        JavaScript DOM learning
+    </title>
+    <style>
+          .green{
+              background-color: green
+          }
+          li.yellow{
+              background-color: yellow;
+          }
+    </style>
+</head>
+<body>
+    <div id="div01" class='green'>Hello World!</div>
+    <h1>My Title</h1>
+    <p>paragraph</p>
+    <ul>
+        <li class="green">List1</li>
+        <li>List2</li>
+        <li class="yellow">List3</li>
+        <li>List4</li>
+    </ul>
+    <p><img alt="dom model" 
+       src="../images/flower.jpg"></img></p>
+    <p><input title="enter your name" type="text" id="txtname"/></p>
+    <script>
+        console.dir(document);
+        console.log(document.URL);
+        console.dir(document.children[0]);
+        console.dir(document.children[0].children[0]);
+        console.dir(document.children[0].children[1]);
+        console.dir(document.children[0].children[1].childNodes);
+
+    </script>
+</body>
+</html>
