@@ -28,7 +28,7 @@ body{
 }
 .card{
     width: 375px;
-    height: 90%;
+    height: 100%;
     background: var(--dark-desaturated-blue);
     border-radius: 5px;
     text-align: center;
@@ -39,9 +39,7 @@ body{
 .img-sec{
     height: 32%;
     width: 100%;
-    background: linear-gradient (hsla(277,100%,25%,100%), rgba(255, 255, 255, 0));
     background: url(./images/image-header-mobile.jpg);
-   
     background-size: cover;
 
 }
@@ -71,6 +69,42 @@ h2 span{
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    
+}
+.overview p{
+    font-size: 12px;
+    font-weight: bold;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (min-width:1140px){
+    .card{
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .img-sec{
+        background: url(./images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .info{
+        text-align: left;
+    }
+    
+    h2{
+        padding: 2rem 3rem;
+    }
+    .overview{
+        display: inline-block;
+
+    }
+    .overview p{
+        font-size: 1rem;
+    }
+
     
 }
 
