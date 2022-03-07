@@ -5,43 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projectlinks</title>
-    <link rel="stylesheet" href="indexstyle.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
-    <style>
-      #div1{
-            background-color: transparent;
-            width: 33.33%;
-            float: right;
-            height: 900px;
-            color: white;
-           
-        }
     
-        
-        #div2{
-            background-color:transparent;
-            width: 33.33%;
-            float: left;
-            height: 900px;
-        }
-        #div3{
-            background-color:transparent;
-            width: 33.33%;
-            margin: 0 auto;
-            height: 900px;
-            
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+    <style type="text/css">
+        body{
+            font-family: 'Poppins',sans-serif;
+            padding: 50px 0;
         }
         .heading{
-            color: whitesmoke;
+            color:black;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px ;
         }
-        
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .container{
+            max-width: 1170px;
+            width: 100%;
+            margin: 0 auto;
 
+            display: flex;
+        }
+        .column{
+            margin: 0 15px 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            background:lightblue;
+            border-radius: 10px;
+            flex-basis: 33%;
+        }
+        .card{
+            padding: 15px 25px;
+        }
     </style>
+    
 
 </head>
 <body background="./images/comp10.jpg">
-    <div id="div1">
+    <div class="container">
+
+        <div class="column">
+            <div class="card">
             <h3 class="heading">HTML FUNDAMENTAL PAGES</h3>
+            <p>
                 <div>
                     <a href="./src/pagea.html" >pagea</a>
                 </div>
@@ -96,8 +106,6 @@
                <div>
                    <a href="./src/parent.html">parent</a>
                </div>
-               
-            
                <div>
                 <a href="./src/localstorage.html">localstorage</a>
             </div>
@@ -137,14 +145,16 @@
             <div>
                 <a href="./src/product6.html">product6</a>
             </div>
-
+            </p>
             </div>
-            </div>
+        </div>
 
 
             
-            <div id="div2">
+            <div class="column">
+                <div class="card">
                 <h3 class="heading">CSS FUNDAMENTAL PAGES</h3>
+                <p>
                 <div>
                     <a href="./src/indexwatch.html">indexwatch</a>
                     </div>
@@ -212,12 +222,16 @@
                 <div>
                     <a href="./src/csslessons/page18.html">page18</a>
                 </div>
-                
+            </p>
+            </div>
            </div>
           
-           
-            <div id="div3">
+            
+
+            <div class="column">
+                <div class="card">
                 <h3 class="heading">CHALLENGES PAGES</h3>
+                <p>
                 <div>
                     <a href="./src/3col/3-column-preview-card-component-main/3colpreview.html">3colpreview</a>
                 </div>
@@ -258,13 +272,28 @@
                 <div>
                     <a href="./src/stats/stats-preview-card-component-main/stats.html">StatsCard</a>
                 </div>
+            </p>
+        </div>
+            </div>
 
+                <div class="column">
+                    <div class="card">
+                    <h3 class="heading">JS PAGES</h3>
+                   <p>
+                       <div>
+                         <a href="D:\js-basic-lessons\src\intro\intro-component-with-signup-form-master\intro.html">intro-component-with-signup-form-master</a>
+                       </div>
+                       <div>
+                        <a href="D:\js-basic-lessons\src\article\article-preview-component-master\article.html">article-preview-component-master</a>
+                      </div>
+                      <div>
+                        <a href="D:\js-basic-lessons\src\FAQ\faq-accordion-card-main\faq.html">faq-accordion-card-main</a>
+                      </div>
+                   </p>
+                </div>
+                </div>
             
 
-           </div>
-    </div>
-    
-</header>
 </div>
 </body>
 </html>
