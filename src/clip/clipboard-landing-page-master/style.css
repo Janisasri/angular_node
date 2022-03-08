@@ -38,7 +38,7 @@ header{
     padding: 5px 0;
 
 }
-.action_button{
+.action-button{
     padding: 20px 0;
 }
 .action-button button{
@@ -125,7 +125,7 @@ header{
     margin: auto;
 
 }
-footer{
+footer .foot{
     display: grid;
     grid-template-columns: 20% 60% 20%;
     align-items: center;
@@ -146,6 +146,7 @@ ul li{
 a{
     color: hsl(171, 66%, 44%);
 }
+
 @media(max-width:765px){
     header{
         background: url("./images/bg-header-desktop.png");

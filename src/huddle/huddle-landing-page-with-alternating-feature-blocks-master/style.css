@@ -23,7 +23,7 @@ ul{
 
 }
 header{
-    background: url(./images/bg-hero-desktop.svg);
+    background: url('./images/bg-hero-desktop.svg');
     background-color: hsl(193, 100%, 96%);
     padding: 40px 60px;
 }
@@ -41,6 +41,7 @@ nav img{
     border: none;
     border-radius: 25px;
     box-shadow: 0 3px 16px rgba(0, 0,0, 0.12);
+    cursor: pointer;
 }
 .build-sec{
     display: flex;
@@ -120,7 +121,7 @@ nav img{
     padding: 60px 0px;
     box-shadow:  0 3px 16px rgba(0, 0,0, 0.12);
     border-radius: 10px;
-    margin-bottom: -100px;
+    margin-bottom: -105px;
 }
 .promo h1{
     margin-bottom: 15px;
@@ -128,11 +129,11 @@ nav img{
 }
 .btn2{
     margin-top: 20px;
-    padding: 24px 105px;
+    padding: 24px 100px;
     border-radius: 40px;
     background-color: hsl(322, 100%, 66%);
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 footer{
@@ -143,7 +144,7 @@ footer{
     padding: 200px 100px 30px;
 }
 .footer-logo{
-    width: 200px;
+    width: 250px;
 }
 .footer-sec{
     display: flex;
@@ -270,6 +271,7 @@ a{
     }
     .sec-2,.sec-3,.sec-4{
         margin-left: 0;
+        width: 100%;
     }
     a{
         margin-left: 0;
@@ -277,7 +279,7 @@ a{
     .sec-4{
         display: flex;
         justify-content: center;
-        margin-left: -4;
+        margin-left: 0px;
         margin: 30px 0px 10px;
         margin-bottom: -20px;
 
