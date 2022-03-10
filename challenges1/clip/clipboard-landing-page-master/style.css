@@ -110,7 +110,7 @@ header{
 .four .functions div img{
     margin: 10px 0 20px 0;
 }
-.four .support_companys{
+.four .support-companys{
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -175,7 +175,7 @@ a{
     .four.functions div{
         width: 85%;
     }
-    .four.support_companys{
+    .four.support-companys{
         align-items: center;
         display: grid;
         grid-gap:4em;
@@ -199,7 +199,7 @@ a{
         display: grid;
         margin: 20px 0;
     }
-    .social_links{
+    .social-links{
         margin: 10px;
     }
 }
