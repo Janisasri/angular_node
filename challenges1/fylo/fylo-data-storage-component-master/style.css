@@ -17,53 +17,50 @@ body{
     font-size: 14px;
 }
 section{
-    height: 100vh;
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    height: 100vh;
+    width: 100%;
 }
 .boxone{
-    width: 90%;
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 100px 10px 10px;
-
+    width: 90%;
 }
 .logo{
     margin: 9%;
 }
 .icon{
-    display: flex;
     align-items: center;
-    margin-left: 9%;
     margin-bottom: 9%;
-    width: 50%;
+    margin-left: 9%;
+    display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 .document,.folder,.upload{
+    align-items: center;
     background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
     padding: 7%;
     height: 20px;
     width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
 }
 .boxtwo{
-    color: white;
-    width: 90%;
+    align-items: center;
     background-color: hsl(228, 56%, 26%);
-    margin-top: 5%;
+    border-radius: 10px;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-
-}
+    margin-top: 5%;
+    width: 90%;
+    }
 .text{
     margin-top: 10%;
 }
@@ -72,87 +69,86 @@ section{
 
 }
 #usageleft{
+    background-color: white;
+    border-radius: 10px 10px 0 10px;
+    color: hsl(229, 57%, 11%);
+    font-size: 10px;
+    margin: 0;
+    padding: 15px;
     position: absolute;
     right: 20px;
     top: -50px;
-    background-color: white;
-    color: hsl(229, 57%, 11%);
-    padding: 15px;
-    border-radius: 10px 10px 0 10px;
-    font-size: 10px;
-    margin: 0;
 }
 #usageleft::before{
-    content: "";
     background-color:white;
+    clip-path: polygon(100% 0,0,0,100%,100%);
+    content: "";
     height: 10px;
-    width: 10px;
     position: absolute;
     top: 23px;
-    clip-path: polygon(100% 0,0,0,100%,100%);
+    width: 10px;
 }
 #usageremaning{
+    color: #000;
     font-size: 20px;
     font-weight: 700;
-    color: #000;
 }
 .bar{
     background-color: hsl(229, 57%, 11%);
-    width: 90%;
+    border-radius: 20px;
     margin-top: 5%;
     padding: 1%;
-    border-radius: 20px;
+    width: 90%;
 }
 .bar .insidebar{
-    border-radius: 20px;
-    width: 81.5%;
     background-image: linear-gradient(to right, hsl(6,100%,80%), hsl(335,100%,65%));
+    border-radius: 20px;
     display: flex;
     justify-content: flex-end;
+    width: 81.5%;
 }
 .bar .insidebar .whiteball{
-    height: 10px;
     background-color: white;
-    width: 4%;
     border-radius: 10px;
+    width: 4%;
+    height: 10px;
 }
 .limit{
     display: flex;
     justify-content: space-between;
-    width: 90%;
     font-weight: bold;
-    margin-top: 3%;
     margin-bottom: 15%;
+    margin-top: 3%;
+    width: 90%;
 }
 
 @media only screen and (min-width:750px){
     body{
+        background-color: hsl(229, 57%, 11%);
         background-image: url(./images/bg-desktop.png);
         background-position-y:bottom;
-        background-color: hsl(229, 57%, 11%);
         background-repeat: repeat-x;
-
     }
     section{
+        align-content: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-content: center;
     }
     .boxone{
-        width: 25%;
-        margin-left: 2%;
         margin-bottom: 1%;
+        margin-left: 2%;
+        width: 25%;
     }
     .boxtwo{
-        width: 45%;
-        margin-left: 2%;
         margin-bottom: 1%;
+        margin-left: 2%;
+        width: 45%;
     }
     .text{
-        margin-top: 5%;
         align-self: flex-start;
         margin-left: 5%;
+        margin-top: 5%;
     }
     .bar{
         margin-top: 3%;
@@ -162,7 +158,7 @@ section{
         width: 2%;
     }
     .limit{
-        margin-top: 1%;
         margin-bottom: 3%;
+        margin-top: 1%;
     }
 }
