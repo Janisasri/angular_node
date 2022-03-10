@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
+:root{
+--grayish-Blue: hsl(208, 11%, 55%);
+--pink: hsl(322, 100%, 66%);
+--very-Dark-Cyan: hsl(192, 100%, 9%);
+--very-Pale-Cyan: hsl(193, 100%, 96%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 body {
     font-family: 'Open Sans',sans-serif;
     font-size: 18px;
@@ -28,15 +35,15 @@ header {
     background-color: hsl(193, 100%, 96%);
     padding: 40px 60px;
 }
-nav{
+nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
-nav img{
+nav img {
     height: 35px;
 }
-.btn{
+.btn {
     border: none;
     background-color: white;
     border-radius: 25px;
@@ -52,10 +59,10 @@ nav img{
 }
 #build {
     width: 45%;
-       }
+}
 #illus {
     width: 55%;
-       }
+}
 #build h1 {
     font-size: 42px;
     margin: 25px 0px;
@@ -96,7 +103,6 @@ nav img{
 }
 #content h2 {
     margin: 10px 0px;
-
 }
 #content p {
     width: 93%;
@@ -104,11 +110,10 @@ nav img{
 #left {
     margin-right: 0px;
 }
-#left p{
+#left p {
     width: 100%;
 }
-
-.promo{
+.promo {
     align-items: center;
     background-color: white;
     border-radius: 10px;
@@ -123,10 +128,10 @@ nav img{
     position: relative;
     width: 55%;
 }
-.promo h1{
+.promo h1 {
     margin-bottom: 15px;
 }
-.btn2{
+.btn2 {
     background-color: hsl(322, 100%, 66%);
     border-radius: 40px;
     color: white;
@@ -134,21 +139,19 @@ nav img{
     margin-top: 20px;
     padding: 24px 100px;
 }
-
-footer{
+footer {
     background-color: hsl(192, 100%, 9%);
     color: white;
     display: flex;
     flex-direction: column;
     padding: 200px 100px 30px;
 }
-.footer-logo{
+.footer-logo {
     width: 250px;
 }
-#footer-sec{
+#footer-sec {
     display: flex;
     margin: 40px 0px;
-
 }
 #sec-1 {
     min-width: 40%;
@@ -158,27 +161,26 @@ footer{
     align-items: flex-start;
     display: flex;
 }
-#add img{
+#add img {
     margin-right: 20px;
     margin-top: 4px;
 }
-   
-li{
+li {
     margin-bottom: 20px;
     opacity: 0.9;
     padding-right: 60px;
 }
 #sec-2, 
 #sec-3, 
-#sec-4{
+#sec-4 {
     margin-left: 30px;
     width: 20%;
 }
-#social{
+#social {
     display: flex;
     padding: 0;
 }
-a{
+a {
   align-items: center;
   border: 1px solid white;
   border-radius: 50%;
@@ -189,108 +191,101 @@ a{
   text-decoration: none;
   width: 30px;
 }
-#social li{
+#social li {
     padding: 0px 7px;
 }
-#copy{
+#copy {
     text-align: right;
 }
-@media (max-width:992px)
-{
-    header{
+@media (max-width:992px) {
+    header {
         padding: 30px 20px;
     }
-    #build-sec{
+    #build-sec {
         flex-direction: column;
         text-align: center;
     }
-    #build{
+    #build {
         width: 95%;
     }
-    #illus{
+    #illus {
         margin-top: 30px;
         width: 95%;
     }
     #build p,
-    #build h1{
+    #build h1 {
         padding: 0;
     }
-    #services{
+    #services {
        padding-left: 30px;
        padding-right: 30px;
        text-align: center;
-
     }
-    #service{
+    #service {
         flex-direction: column;
         margin-left: 0px;
         padding-left: 10px;
         padding-right: 10px;
     }
     #service-1,
-    #service-2
-    {
+    #service-2 {
         flex-direction: column-reverse;
     }
-    #service p{
+    #service p {
         margin: auto;
         padding: 0;
         width: 100%;
     }
-    #content{
+    #content {
         margin-bottom: 20px;
         margin-top: 30px;
         padding-left: 10px;
         padding-right: 10px;
         width: 93%;
     }
-    #promo{
+    #promo {
         width: 90%;
     }
-    h1{
+    h1 {
        font-size: 28px;
     }
-    #promo button{
+    #promo button {
         font-size: 16px;
         padding: 15px 60px;
     }
-    footer{
+    footer {
         padding-left: 30px;
         padding-right: 0px;
     }
-    #footer-sec{
+    #footer-sec {
         flex-direction: column;
     }
-    li{
+    li {
        padding-right: 0;
     }
-    #sec-1{
+    #sec-1 {
         margin-top: 40px;
         width: 90%;
     }
     #sec-2,
     #sec-3,
-    #sec-4{
+    #sec-4 {
         margin-left: 0;
         width: 100%;
     }
-    a{
+    a {
         margin-left: 0;
     }
-    #sec-4{
+    #sec-4 {
         display: flex;
         justify-content: center;
         margin: 30px 0px 10px;
         margin-bottom: -20px;
         margin-left: 0px;
     }
-    #copy{
+    #copy {
         text-align: center;
     }
-
-
-
-
 }
 
 

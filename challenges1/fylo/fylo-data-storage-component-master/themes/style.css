@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root{
---gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
---pale-Blue: hsl(243, 100%, 93%);
---grayish-Blue: hsl(229, 7%, 55%);
 --Dark-Blue: hsl(228, 56%, 26%);
+--gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+--grayish-Blue: hsl(229, 7%, 55%);
+--pale-Blue: hsl(243, 100%, 93%);
 --very-Dark-Blue: hsl(229, 57%, 11%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-image: url(./images/bg-mobile.png);
     font-family: "Raleway",sans-serif;
     font-size: 14px;
 }
-section{
+section {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -24,15 +25,15 @@ section{
     height: 100vh;
     width: 100%;
 }
-.boxone{
+.boxone {
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 100px 10px 10px;
     width: 90%;
 }
-.logo{
+.logo {
     margin: 9%;
 }
-.icon{
+.icon {
     align-items: center;
     margin-bottom: 9%;
     margin-left: 9%;
@@ -42,7 +43,7 @@ section{
 }
 .document,
 .folder,
-.upload{
+.upload {
     align-items: center;
     background-color: hsl(229, 57%, 11%);
     border-radius: 10px;
@@ -52,7 +53,7 @@ section{
     height: 20px;
     width: 20px;
 }
-.boxtwo{
+.boxtwo {
     align-items: center;
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px;
@@ -62,15 +63,14 @@ section{
     justify-content: center;
     margin-top: 5%;
     width: 90%;
-    }
-.text{
+}
+.text {
     margin-top: 10%;
 }
-.text span{
+.text span {
     font-weight: bolder;
-
 }
-#usageleft{
+#usageleft {
     background-color: white;
     border-radius: 10px 10px 0 10px;
     color: hsl(229, 57%, 11%);
@@ -81,7 +81,7 @@ section{
     right: 20px;
     top: -50px;
 }
-#usageleft::before{
+#usageleft::before {
     background-color:white;
     clip-path: polygon(100% 0,0,0,100%,100%);
     content: "";
@@ -90,32 +90,32 @@ section{
     top: 23px;
     width: 10px;
 }
-#usageremaning{
+#usageremaning {
     color: #000;
     font-size: 20px;
     font-weight: 700;
 }
-.bar{
+.bar {
     background-color: hsl(229, 57%, 11%);
     border-radius: 20px;
     margin-top: 5%;
     padding: 1%;
     width: 90%;
 }
-.bar .insidebar{
+.bar .insidebar {
     background-image: linear-gradient(to right, hsl(6,100%,80%), hsl(335,100%,65%));
     border-radius: 20px;
     display: flex;
     justify-content: flex-end;
     width: 81.5%;
 }
-.bar .insidebar .whiteball{
+.bar .insidebar .whiteball {
     background-color: white;
     border-radius: 10px;
     width: 4%;
     height: 10px;
 }
-.limit{
+.limit {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -124,42 +124,42 @@ section{
     width: 90%;
 }
 
-@media only screen and (min-width:750px){
-    body{
+@media only screen and (min-width: 750px) {
+    body {
         background-color: hsl(229, 57%, 11%);
         background-image: url(./images/bg-desktop.png);
         background-position-y:bottom;
         background-repeat: repeat-x;
     }
-    section{
+    section {
         align-content: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .boxone{
+    .boxone {
         margin-bottom: 1%;
         margin-left: 2%;
         width: 25%;
     }
-    .boxtwo{
+    .boxtwo {
         margin-bottom: 1%;
         margin-left: 2%;
         width: 45%;
     }
-    .text{
+    .text {
         align-self: flex-start;
         margin-left: 5%;
         margin-top: 5%;
     }
-    .bar{
+    .bar {
         margin-top: 3%;
         padding: .5%;
     }
-    .bar.insidebar.whiteball{
+    .bar.insidebar.whiteball {
         width: 2%;
     }
-    .limit{
+    .limit {
         margin-bottom: 3%;
         margin-top: 1%;
     }

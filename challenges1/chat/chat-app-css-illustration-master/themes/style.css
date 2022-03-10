@@ -1,12 +1,13 @@
 :root{
 --light-Magenta: hsl(293, 100%, 63%);
 --light-Violet: hsl(264, 100%, 61%);
---white: hsl(0, 0%, 100%);
 --light-Grayish-Violet : hsl(270, 20%, 96%);
 --very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
 --very-Light-Magenta: hsl(289, 100%, 72%);
+--white: hsl(0, 0%, 100%);
 }
-   *{
+
+* {
        box-sizing: border-box;
        margin: 0;
        padding: 0;
@@ -23,22 +24,22 @@
        height: 100vh;
        justify-content: center;
     }
-   #phone{
+   #phone {
        background-color: white;
        border-radius: 20px;
        padding: 3%;
        width: 65%;
     }
-   #message{
+   #message {
        background-color: var(--light-Grayish-Violet);
        border-radius: 20px;
        color: white;
    }
-   #background{
+   #background {
        background-image: linear-gradient(var(--light-Violet),var(--light-Magenta));
        border-radius: 20px 20px 10px 10px;
    }
-   #camera{
+   #camera {
        background-color: white;
        border-radius: 0px 0px 15px 15px;
        margin: auto;
@@ -46,33 +47,33 @@
        text-align: center;
        width: 50%;
     }
-   #head{
+    #head {
        align-items: center;
        display: flex;
        justify-content: space-between;
        padding-bottom: 5%;
        padding-top: 5%;
        width: 100%;
-      }
-   .leftpart{
+    }
+   .leftpart {
        align-items: center;
        display: flex;
        justify-content: space-evenly;
        width: 75%;
     }
-   .leftpart img{
+   .leftpart img {
        border-radius: 20px;
        border: 2px solid white;
        width: 25px;
-   }
-   #desc p{
+    }
+   #desc p {
        color: var(--light-Grayish-Violet);
        font-size: 10px;
     }
-   #threedots{
+   #threedots {
        margin-right: 5%;
-   }
-   .leftmsg{
+    }
+   .leftmsg {
        background-color: lightgray;
        border-radius: 10px;
        color: var(--light-Violet);
@@ -82,30 +83,29 @@
        padding: 3%;
        width: 60%;
     }
-
-   .rightmsg {
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    color: black;
-    margin-left: 2%;
-    margin-top: 4%;
-    padding: 3%;
-    width: 60%;
+    .rightmsg {
+       background-color: white;
+       border-radius: 10px;
+       color: black;
+       color: black;
+       margin-left: 2%;
+       margin-top: 4%;
+       padding: 3%;
+       width: 60%;
     }
    .right {
        display: flex;
        justify-content: flex-end;
-   }
+    }
    .images {
        margin-top: 10px;
        margin-right: 2%;
-   }
+    }
    .images img {
        border-radius: 10px;
        width: 55px;
-   }
-   .payment{
+    }
+   .payment {
        align-items: center;
        background-image: linear-gradient(to left,var(--light-Violet),var(--light-Magenta));
        border-radius: 10px;
@@ -121,12 +121,12 @@
    .payment p{
        font-size: 16px;
        font-weight: bolder;
-   }
+    }
    .middlesend{
         display: flex;
         justify-content: center;
-   }
-   .send{
+    }
+   .send {
        align-items: center;
        background-color: white;
        border-radius: 30px;
@@ -139,7 +139,7 @@
        padding: 2%;
        width: 90%;
     }
-   .angleright{
+   .angleright {
        align-items: center;
        background-color: purple;
        border-radius: 100px;
@@ -150,61 +150,61 @@
        padding: 2%;
        width: 9%;
     }
-   .facts{
+   .facts {
        align-items: center;
        display: flex;
        flex-direction: column;
        margin-top: 8%;
        text-align: center;
     }
-   .facts h2{
+   .facts h2 {
        font-size: 40px;
-   }
-   .facts p{
+    }
+   .facts p {
        color: grey;
        margin-top: 3%;
        width: 80%;
     }
-   .purple{
+   .purple {
        background-image: linear-gradient(var(--light-Magenta),var(--light-Violet));
        border-radius: 0px 0px 1000px 0px;
        position: absolute;
        height: 50vh;
        width: 50%;
        z-index: -1;
-   }
-   .gray{
-    bottom: 0;
-    background-image: rgba(240,234,234,0.582);
-    border-radius: 1000px 0px 0px 0px;
-    position: absolute;
-    height: 50vh;
-    right: 0;
-    width: 50%;
-    z-index: -1;
-       }
-@media only screen and (min-width: 865px){
-    section{
+    }
+   .gray {
+       bottom: 0;
+       background-image: rgba(240,234,234,0.582);
+       border-radius: 1000px 0px 0px 0px;
+       position: absolute;
+       height: 50vh;
+       right: 0;
+       width: 50%;
+       z-index: -1;
+    }
+@media only screen and (min-width: 865px) {
+    section {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    #phone{
+    #phone {
         padding: .5%;
         width: 25%;
     }
-    .facts{
+    .facts {
         align-items: flex-start;
         margin-left: 10%;
         text-align: left;
         width: 35%;
     }
-    .purple{
+    .purple {
         border-radius: 0px 0px 1000px 1000px;
         height: 80vh;
         width: 30%;
     }
-    .gray{
+    .gray {
         border-radius: 1000px 55px 0px 0px;
         height: 80vh;
         width: 30%;
