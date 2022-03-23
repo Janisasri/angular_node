@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="./scripts/demoa.js?v=2"></script>
+</head>
+<body>
+    <p>
+        <label for="firstValue">X:</label>
+        <input id="firstValue" type="text" placeholder="Enter a number"/>
+    
+        <label for="secondValue">Y:</label>
+        <input id="secondValue" type="text" placeholder="Enter a number"/>
+    
+        <input type="button" value="OK" onclick="addition()"/>
+    
+        <input type="button" value="+" onclick="sum()"/>
+    
+        <input type="button" value="add again" 
+        onclick="add(100,50)"/>
+    
+        <input type="button" value="add with param" 
+        onclick="add(document.getElementById('firstValue').value,
+        document.getElementById('secondValue').value)"/>
+    </p>
+    <p>
+       <input type="button" value="problem1" onclick="problem1()"/>
+       <input type="button" value="problem2" onclick="problem2()"/>
+       <input type="button" value="problem3" onclick="problem3()"/>
+
+       <label for="fValue">A:</label>
+        <input id="fValue" type="text" placeholder="Enter a number"/>
+       <input type="button" value="printdigits" onclick="printdigits(document.getElementById('fValue').value)"/>
+       
+    </p>
+    <div id="result"></div>
+    
+</body>
+</html>
